@@ -26,6 +26,7 @@ class InViewNotifierList extends InViewNotifier {
     bool? primary,
     bool shrinkWrap = false,
     bool addAutomaticKeepAlives = true,
+    double? cacheExtent,
   })  : assert(endNotificationOffset >= 0.0),
         super(
           key: key,
@@ -45,6 +46,7 @@ class InViewNotifierList extends InViewNotifier {
             shrinkWrap: shrinkWrap,
             itemCount: itemCount,
             itemBuilder: builder,
+            cacheExtent: cacheExtent,
           ),
         );
 
